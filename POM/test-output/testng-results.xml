@@ -2,43 +2,43 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-21T12:54:56 ADT" name="Default suite" finished-at="2021-06-21T12:55:29 ADT" duration-ms="33213">
+  <suite started-at="2021-06-27T19:48:00 ADT" name="Default suite" finished-at="2021-06-27T19:48:36 ADT" duration-ms="36640">
     <groups>
     </groups>
-    <test started-at="2021-06-21T12:54:56 ADT" name="Default test" finished-at="2021-06-21T12:55:29 ADT" duration-ms="33213">
+    <test started-at="2021-06-27T19:48:00 ADT" name="Default test" finished-at="2021-06-27T19:48:36 ADT" duration-ms="36640">
       <class name="tests.BaseTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:54:56 ADT" name="setup" finished-at="2021-06-21T12:55:21 ADT" duration-ms="24792" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:00 ADT" name="setup" finished-at="2021-06-27T19:48:25 ADT" duration-ms="24682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testOne()[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:55:21 ADT" name="testOne" finished-at="2021-06-21T12:55:27 ADT" duration-ms="6708" status="PASS">
+        <test-method signature="openPageTest()[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:25 ADT" name="openPageTest" finished-at="2021-06-27T19:48:31 ADT" duration-ms="6473" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:55:27 ADT" name="afterTest" finished-at="2021-06-21T12:55:27 ADT" duration-ms="2" status="PASS">
+        </test-method> <!-- openPageTest -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:31 ADT" name="afterTest" finished-at="2021-06-27T19:48:31 ADT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOne status=SUCCESS method=BaseTest.testOne()[pri:0, instance:tests.BaseTest@59505b48] output={null}]]]>
+                <![CDATA[[TestResult name=openPageTest status=SUCCESS method=BaseTest.openPageTest()[pri:0, instance:tests.BaseTest@59505b48] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method signature="testTwo()[pri:1, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:55:27 ADT" name="testTwo" finished-at="2021-06-21T12:55:27 ADT" duration-ms="41" status="FAIL">
+        <test-method signature="enterSearchTest()[pri:1, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:31 ADT" name="enterSearchTest" finished-at="2021-06-27T19:48:31 ADT" duration-ms="31" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Salma Hayek] but found [Salma Hayek - Google Search]]]>
+              <![CDATA[expected [Amazon] but found [Amazon - Google Search]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Salma Hayek] but found [Salma Hayek - Google Search]
+              <![CDATA[java.lang.AssertionError: expected [Amazon] but found [Amazon - Google Search]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at tests.BaseTest.testTwo(BaseTest.java:73)
+at tests.BaseTest.enterSearchTest(BaseTest.java:73)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,31 +72,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTwo -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:55:27 ADT" name="afterTest" finished-at="2021-06-21T12:55:28 ADT" duration-ms="294" status="PASS">
+        </test-method> <!-- enterSearchTest -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:31 ADT" name="afterTest" finished-at="2021-06-27T19:48:31 ADT" duration-ms="186" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testTwo status=FAILURE method=BaseTest.testTwo()[pri:1, instance:tests.BaseTest@59505b48] output={null}]]]>
+                <![CDATA[[TestResult name=enterSearchTest status=FAILURE method=BaseTest.enterSearchTest()[pri:1, instance:tests.BaseTest@59505b48] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method signature="testThree()[pri:2, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:55:28 ADT" name="testThree" finished-at="2021-06-21T12:55:28 ADT" duration-ms="7" status="FAIL">
+        <test-method signature="openResultsTest()[pri:2, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:31 ADT" name="openResultsTest" finished-at="2021-06-27T19:48:35 ADT" duration-ms="3459" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Salma Hayek - Google Searchh] but found [Salma Hayek - Google Search]]]>
+              <![CDATA[expected [Amazon - Google Search] but found [Amazon.ca: Low Prices – Fast Shipping – Millions of Items]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Salma Hayek - Google Searchh] but found [Salma Hayek - Google Search]
+              <![CDATA[java.lang.AssertionError: expected [Amazon - Google Search] but found [Amazon.ca: Low Prices – Fast Shipping – Millions of Items]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at tests.BaseTest.testThree(BaseTest.java:82)
+at tests.BaseTest.openResultsTest(BaseTest.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,19 +130,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:55:28 ADT" name="afterTest" finished-at="2021-06-21T12:55:28 ADT" duration-ms="270" status="PASS">
+        </test-method> <!-- openResultsTest -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:35 ADT" name="afterTest" finished-at="2021-06-27T19:48:35 ADT" duration-ms="386" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testThree status=FAILURE method=BaseTest.testThree()[pri:2, instance:tests.BaseTest@59505b48] output={null}]]]>
+                <![CDATA[[TestResult name=openResultsTest status=FAILURE method=BaseTest.openResultsTest()[pri:2, instance:tests.BaseTest@59505b48] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-21T12:55:28 ADT" name="tearDown" finished-at="2021-06-21T12:55:29 ADT" duration-ms="1066" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BaseTest@59505b48]" started-at="2021-06-27T19:48:35 ADT" name="tearDown" finished-at="2021-06-27T19:48:36 ADT" duration-ms="1383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

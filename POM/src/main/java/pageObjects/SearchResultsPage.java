@@ -26,4 +26,9 @@ public class SearchResultsPage {
 		return driver.getTitle();
 	  }
   
+  public String clickURL() {
+	  driver.findElement(By.xpath("//a[@href='https://www.amazon.ca/']")).click();
+		return driver.getTitle();
+	  }
+  
 }

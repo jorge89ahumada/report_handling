@@ -5,10 +5,10 @@
     <classes>
       <class name="tests.BaseTest">
         <methods>
-          <include name="testThree"/>
+          <include name="enterSearchTest"/>
           <include name="tearDown"/>
           <include name="afterTest"/>
-          <include name="testTwo"/>
+          <include name="openResultsTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tests.BaseTest -->

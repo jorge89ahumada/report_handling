@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\jorge.ahumadacastell\AppData\Local\Temp\testng-eclipse-93829001\testng-customsuite.xml</span>
+                    <span>C:\Users\jorge.ahumadacastell\AppData\Local\Temp\testng-eclipse--954982662\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="testThree">testThree</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="enterSearchTest">enterSearchTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="testTwo">testTwo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="openResultsTest">openResultsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,7 +121,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="testOne">testOne</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.BaseTest" class="method navigator-link" hash-for-method="openPageTest">openPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -144,16 +144,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testThree">
-                  </a> <!-- testThree -->
-                  <span class="method-name">testThree</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Salma Hayek - Google Searchh] but found [Salma Hayek - Google Search]
+                  <a name="enterSearchTest">
+                  </a> <!-- enterSearchTest -->
+                  <span class="method-name">enterSearchTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Amazon] but found [Amazon - Google Search]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.BaseTest.testThree(BaseTest.java:82)
+	at tests.BaseTest.enterSearchTest(BaseTest.java:73)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,16 +188,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testTwo">
-                  </a> <!-- testTwo -->
-                  <span class="method-name">testTwo</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Salma Hayek] but found [Salma Hayek - Google Search]
+                  <a name="openResultsTest">
+                  </a> <!-- openResultsTest -->
+                  <span class="method-name">openResultsTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Amazon - Google Search] but found [Amazon.ca: Low Prices – Fast Shipping – Millions of Items]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.BaseTest.testTwo(BaseTest.java:73)
+	at tests.BaseTest.openResultsTest(BaseTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -240,9 +240,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testOne">
-                  </a> <!-- testOne -->
-                  <span class="method-name">testOne</span>
+                  <a name="openPageTest">
+                  </a> <!-- openPageTest -->
+                  <span class="method-name">openPageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -250,7 +250,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\jorge.ahumadacastell\AppData\Local\Temp\testng-eclipse-93829001\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\jorge.ahumadacastell\AppData\Local\Temp\testng-eclipse--954982662\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -301,22 +301,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testOne')
+data.setCell(0, 1, 'openPageTest')
 data.setCell(0, 2, 'tests.BaseTest')
-data.setCell(0, 3, 6708);
+data.setCell(0, 3, 6473);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testTwo')
+data.setCell(1, 1, 'openResultsTest')
 data.setCell(1, 2, 'tests.BaseTest')
-data.setCell(1, 3, 41);
+data.setCell(1, 3, 3459);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testThree')
+data.setCell(2, 1, 'enterSearchTest')
 data.setCell(2, 2, 'tests.BaseTest')
-data.setCell(2, 3, 7);
+data.setCell(2, 3, 31);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -348,36 +348,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testOne</span>
-                <span class="method-start">24812 ms</span>
+                <span class="method-name">openPageTest</span>
+                <span class="method-start">24707 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterTest([TestResult name=testOne status=SUCCESS method=BaseTest.testOne()[pri:0, instance:tests.BaseTest@595...)</span>
-                <span class="method-start">31523 ms</span>
+                <span class="method-name">afterTest([TestResult name=openPageTest status=SUCCESS method=BaseTest.openPageTest()[pri:0, instance:tests.Ba...)</span>
+                <span class="method-start">31182 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testTwo</span>
-                <span class="method-start">31527 ms</span>
+                <span class="method-name">enterSearchTest</span>
+                <span class="method-start">31185 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterTest([TestResult name=testTwo status=FAILURE method=BaseTest.testTwo()[pri:1, instance:tests.BaseTest@595...)</span>
-                <span class="method-start">31571 ms</span>
+                <span class="method-name">afterTest([TestResult name=enterSearchTest status=FAILURE method=BaseTest.enterSearchTest()[pri:1, instance:te...)</span>
+                <span class="method-start">31218 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testThree</span>
-                <span class="method-start">31865 ms</span>
+                <span class="method-name">openResultsTest</span>
+                <span class="method-start">31404 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterTest([TestResult name=testThree status=FAILURE method=BaseTest.testThree()[pri:2, instance:tests.BaseTest...)</span>
-                <span class="method-start">31873 ms</span>
+                <span class="method-name">afterTest([TestResult name=openResultsTest status=FAILURE method=BaseTest.openResultsTest()[pri:2, instance:te...)</span>
+                <span class="method-start">34866 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32143 ms</span>
+                <span class="method-start">35253 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

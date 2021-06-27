@@ -12,6 +12,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.eclipse.jetty.client.api.Result;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -33,7 +34,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 public class BaseTest {
 	
     String driverPath = "C:\\browserdrivers\\chromedriver.exe";
-    String searchString = "Robert Rodriguez";
+    String searchString = "Amazon";
     WebDriver driver;
     SearchPage objSearchPage;
     SearchResultsPage objSearchResultsPage;
@@ -55,59 +56,36 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
     
-    @Test(priority=0)
-    public void testOne() throws InterruptedException
+   @Test(priority=0)
+    public void openPageTest() throws InterruptedException
     {
-    	logger = Reports.createTest("testOne");
+    	logger = Reports.createTest("openPage");
     	objSearchPage = new SearchPage(driver);
     	objSearchResultsPage = objSearchPage.typeSearchItem(searchString);
-    	logger.log(Status.PASS, "testOne");
+    	logger.log(Status.PASS, "openPage");
     }
     
-    @Test(priority=1)
-    public void testTwo()
+   @Test(priority=1)
+   public void enterSearchTest()
     {
-    	logger = Reports.createTest("testTwo");
+     	logger = Reports.createTest("enterSearch");
     	System.out.println("Search Result Stat::"+" "+objSearchResultsPage.returnSearchStat());
     	Assert.assertEquals(objSearchResultsPage.returnPageTitle(), searchString);
-    	logger.log(Status.PASS, "testTwo");
+    	logger.log(Status.PASS, "enterSearch"); 
     }
     
     
     @Test(priority=2)
-    public void testThree()
+    public void openResultsTest() 
     {
-    	logger = Reports.createTest("testJorge");
-    	Assert.assertEquals(objSearchResultsPage.returnPageTitle(), searchString + " - Google Searchh");
-    	logger.log(Status.PASS, "testJorge");
+    	logger = Reports.createTest("openResults");
+    	Assert.assertEquals(objSearchResultsPage.clickURL(), searchString + " - Google Search");
+    	logger.log(Status.PASS, "openResults");
     }
     
     
     
-//    @Test(priority=0)
-//    public void testOne() throws InterruptedException, IOException
-//    {
-//    	String SheetName="Sheet1";
-//    	File file = new File("C:\\Users\\raunaq.nischal\\eclipse-workspace\\POM\\src\\main\\java\\SearchTerm.xlsx");
-//    	FileInputStream ip = new FileInputStream(file);
-//    	Workbook gwb= new XSSFWorkbook(ip);
-//    	Sheet gsheet=gwb.getSheet(SheetName);
-//    	int rowCount = gsheet.getLastRowNum()-gsheet.getFirstRowNum();
-//    	for(int i=1;i<rowCount+1;i++)
-//    	{
-//    	Row row = gsheet.getRow(i);	
-//    	int j=1;
-//    	String Searchitem =row.getCell(j).getStringCellValue();
-//    	
-//    	objSearchPage = new SearchPage(driver);
-//    	objSearchPage.typeSearchItem(Searchitem);
-//    	objSearchResultsPage = new SearchResultsPage(driver);
-//    	System.out.println("Search Result Stat::"+" "+objSearchResultsPage.returnSearchStat());
-//    	driver.navigate().back();
-//    	}
-//    }
-    
-    
+
     
     @AfterMethod()
     public void afterTest(ITestResult Result) throws IOException 
