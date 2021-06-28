@@ -42,16 +42,15 @@ public class BaseTest {
     ExtentReports Reports;
     ExtentTest logger;
 
-    
+   
     @BeforeTest
     public void setup(){
-    	
     	htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"\\src\\test\\Reports\\reports.html");
     	Reports = new ExtentReports();
     	Reports.attachReporter(htmlReporter);
     	System.setProperty("webdriver.chrome.driver", driverPath);      
         driver = new ChromeDriver();
-        driver.get("https://www.google.com/");
+        driver.get("https://www.bing.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
@@ -79,7 +78,7 @@ public class BaseTest {
     public void openResultsTest() 
     {
     	logger = Reports.createTest("openResults");
-    	Assert.assertEquals(objSearchResultsPage.clickURL(), searchString + " - Google Search");
+    	Assert.assertEquals(objSearchResultsPage.clickURL(), searchString + " - Bing");
     	logger.log(Status.PASS, "openResults");
     }
     

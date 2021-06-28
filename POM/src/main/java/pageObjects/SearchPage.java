@@ -17,7 +17,7 @@ public class SearchPage {
       this.driver = driver;
       action = new Actions(driver);
       wait = new WebDriverWait(driver,30);
-      if (!driver.getTitle().equals("Google")) {
+      if (!driver.getTitle().equals("Bing")) {
           throw new IllegalStateException("This is not the correct page," +" current page is: " + driver.getCurrentUrl());
       }
   }
